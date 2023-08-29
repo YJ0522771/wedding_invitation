@@ -1,17 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    브라우저 화면 크기 : <span>{{ windowWidth }}</span> * <span>{{ windowHeight }}</span>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+  },
+  data: function() {
+    return {
+      windowWidth: window.innerWidth,
+      windowHeight: window.innerHeight
+    }
+  },
+  mounted() {
+    window.addEventListener('resize', () => {
+      this.windowWidth = window.innerWidth
+      this.windowHeight = window.innerHeight
+      console.log(this.isMobile)
+    })
+  },
+  computed: {
+    isMobile() {
+      return this.windowWidth <= 768
+    }
   }
 }
 </script>
