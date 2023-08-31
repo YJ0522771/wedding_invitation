@@ -1,5 +1,6 @@
 <template>
     <div class="map">
+        <h3>Location</h3>
         <div id="mapdata"></div>
     </div>
 </template>
@@ -20,9 +21,14 @@ export default {
 
         script.onload = () => {
         // 네이버 지도 생성
-            new window.naver.maps.Map("mapdata", {
+            var map = new window.naver.maps.Map("mapdata", {
                 center: new window.naver.maps.LatLng(36.1031018, 128.3615047),
                 zoom: 16
+            });
+
+            new window.naver.maps.Marker({
+                position: new window.naver.maps.LatLng(36.1031018, 128.3615047),
+                map: map
             });
         };
     }
@@ -34,6 +40,7 @@ export default {
 .map {
     width: 100%;
     margin: 0;
+    align-items: center;
 }
 .img {
     width: 100%;
@@ -42,6 +49,7 @@ export default {
 }
 #mapdata {
     width:60%; 
-    height:30vw;
+    height:50vw;
+    margin: auto;
 }
 </style>
