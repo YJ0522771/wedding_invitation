@@ -1,6 +1,6 @@
 <template>
     <div class="map">
-        <h3>Map</h3>
+        <div id="mapdata"></div>
     </div>
 </template>
 
@@ -9,10 +9,39 @@ export default {
     name: 'Map',
     props: {
         
+    },
+    mounted() {
+        // 네이버 지도 API 로드
+        const script = document.createElement("script");
+        script.src ="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=e4wohmvzn4";
+        script.async = true;
+        script.defer = true;
+        document.head.appendChild(script);
+
+        script.onload = () => {
+        // 네이버 지도 생성
+            new window.naver.maps.Map("mapdata", {
+                center: new window.naver.maps.LatLng(36.1031018, 128.3615047),
+                zoom: 16
+            });
+        };
     }
+            
 }
 </script>
 
 <style scoped>
-
+.map {
+    width: 100%;
+    margin: 0;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#mapdata {
+    width:60%; 
+    height:30vw;
+}
 </style>

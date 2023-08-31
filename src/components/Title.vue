@@ -1,7 +1,6 @@
 <template>
     <div class="title">
-        <h3>Title</h3>
-        <img src = "@/pictures/01.jpg" class="img"/>
+        <img src = "@/assets/contents/title.jpg" class="img"/>
     </div>
 </template>
 
@@ -21,6 +20,7 @@ export default {
 }
 .img {
     width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        브라우저 화면 크기 : <span>{{ windowWidth }}</span> * <span>{{ windowHeight }}</span> <span>"Is moblie: {{ isMobile }}"</span>
+        <!-- 브라우저 화면 크기 : <span>{{ windowWidth }}</span> * <span>{{ windowHeight }}</span> <span>"Is moblie: {{ isMobile }}"</span> -->
         <Title/>
         <Invitation/>
         <Information/>
@@ -56,8 +56,8 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
-    width: 100vw;
-    height: 100vh;
+    margin: 0;
+    width: 100%;
+    background: #ffffd1;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="invitation">
-        <h3>Invitation</h3>
+        <img src = "@/assets/contents/invitation.jpg" class="img"/>
     </div>
 </template>
 
@@ -14,5 +14,13 @@ export default {
 </script>
 
 <style scoped>
-
+.invitation {
+    width: 100%;
+    margin: 0;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 </style>
