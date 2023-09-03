@@ -17,6 +17,8 @@ export default {
 .title {
     width: 100%;
     margin: 0;
+    z-index: 1;
+    position: relative;
 }
 .img {
     width: 100%;

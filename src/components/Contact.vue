@@ -1,6 +1,7 @@
 <template>
     <div class="contact">
-        <h3>매미 전하는 곳</h3>
+        <Headline
+        headline="매미 전하는 곳"/>
         <div class="accordion">
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -13,7 +14,7 @@
                     v-for="e in account1"
                     :key="e.name">
                         <p class="name">{{ e.name }}</p>
-                        <div class="account"><span>{{ e.bank }}</span> <span>{{ e.account }}</span><button @click="copy(e.name)"></button></div>
+                        <div class="account"><span>{{ e.bank }}</span> <span>{{ e.account }}</span><button class="btn" @click="copy(e.name)"><img class="copy" src="@/assets/icons/copy.png"></button></div>
                     </div>
                 </div>
             </div>
@@ -28,7 +29,7 @@
                     v-for="e in account2"
                     :key="e.name">
                         <p class="name">{{ e.name }}</p>
-                        <div class="account"><span>{{ e.bank }}</span> <span>{{ e.account }}</span><button @click="copy(e.name)"></button></div>
+                        <div class="account"><span>{{ e.bank }}</span> <span>{{ e.account }}</span><button class="btn" @click="copy(e.name)"><img class="copy" src="@/assets/icons/copy.png"></button></div>
                         
                     </div>
                 </div>
@@ -38,12 +39,14 @@
 </template>
 
 <script>
+import Headline from './Headline.vue'
+
 export default {
     name: 'Contact',
     props: {
-        
     },
     components: {
+        Headline,
     },
     data: function() {
         return {
@@ -132,8 +135,10 @@ export default {
 
 <style scoped>
 .accordion {
-    width: 70vw;
+    width: 80vw;
     margin: 10vw auto;
+    z-index: 1;
+    position: relative;
 }
 .accounts {
     text-align: start;
@@ -146,8 +151,16 @@ export default {
 }
 .btn {
     margin: 1vw 0;
+    padding: 0;
+    width: 4vw;
+    height: 4vw;
 }
 .btn-text {
     font-weight: bold;
+}
+.copy  {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: 0;
 }
 </style>

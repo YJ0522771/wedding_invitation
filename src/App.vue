@@ -1,12 +1,14 @@
 <template>
     <div id="app">
         <!-- 브라우저 화면 크기 : <span>{{ windowWidth }}</span> * <span>{{ windowHeight }}</span> <span>"Is moblie: {{ isMobile }}"</span> -->
+        
         <Title/>
         <Invitation/>
         <Information/>
         <Gallery/>
         <Map/>
         <Contact/>
+        <img src="@/assets/contents/bg.png" class="bg"/>
     </div>
 </template>
 
@@ -51,7 +53,8 @@ export default {
 
 <style>
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -59,5 +62,14 @@ export default {
     margin: 0;
     width: 100%;
     background: #ffffff;
+}
+.bg {
+    width: 80%;
+    position: fixed;
+    top: 35vw;
+    left: 0;
+    margin: 0 10%;
+    z-index: 0;
+    opacity: 0.4;
 }
 </style>

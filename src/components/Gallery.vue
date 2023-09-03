@@ -6,7 +6,8 @@
             @close="nonVisibleCarousel"
             />
         </div>
-        <h3>Gallery</h3>
+        <Headline
+        headline="갤러리" />
         <div class="row">
             <div class="col"
             v-for="(file_name, idx) in picture_names"
@@ -22,6 +23,7 @@
 
 <script>
 import GalleryCarousel from './GalleryCarousel.vue'
+import Headline from './Headline.vue'
 
 export default {
     name: 'Gallery',
@@ -30,6 +32,7 @@ export default {
     },
     components: {
         GalleryCarousel,
+        Headline
     },
     data: function() {
         return {
@@ -74,6 +77,8 @@ export default {
     width: 100%;
     align-items: center;
     justify-content: center;
+    z-index: 1;
+    position: relative;
 }
 .row {
     --bs-gutter-x: 1vw;

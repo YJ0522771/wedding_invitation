@@ -38,6 +38,8 @@ export default {
 .invitation {
     width: 100%;
     margin: 0;
+    z-index: 1;
+    position: relative;
 }
 .greeting {
     width: 70%;
@@ -49,15 +51,15 @@ export default {
     font-size: 2.3vw;
 }
 .text {
-    font-size: 4vw;   
+    font-size: 3vw;   
 }
 .names {
-    margin: 5vw
+    margin: 3vw
 }
 .name-text {
-    font-size: 4vw;  
+    font-size: 4.5vw;  
     font-weight: bolder;
-    margin: 6vw
+    margin: 3vw
 }
 .other-text {
     font-size: 2vw; 

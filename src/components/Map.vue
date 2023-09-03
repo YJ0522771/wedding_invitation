@@ -1,8 +1,10 @@
 <template>
     <div class="map">
+        <Headline
+        headline="예식장 안내"/>
         <div id="mapdata"></div>
         <div class="address">
-            <span class="address-title">주소:</span> <span class="address-text">경북 구미시 새마을로 225</span> <button @click="copyAddress"></button>
+            <span class="address-title">주소:</span> <span class="address-text">경북 구미시 새마을로 225</span> <button class="btn" @click="copyAddress"><img class="copy" src="@/assets/icons/copy.png"></button>
         </div>
         <div>
             <a href="https://surl.tmobiapi.com/84c21001">
@@ -24,6 +26,7 @@
 <script>
 import Vue from 'vue'
 import VueClipboard from 'vue-clipboard2'
+import Headline from './Headline.vue'
 
 VueClipboard.config.autoSetContainer = true;
 Vue.use(VueClipboard)
@@ -32,6 +35,9 @@ export default {
     name: 'Map',
     props: {
         
+    },
+    components: {
+        Headline,
     },
     mounted() {
         // 네이버 지도 API 로드
@@ -71,6 +77,8 @@ export default {
     align-items: center;
     margin-top: 20vw;
     margin-bottom: 20vw;
+    z-index: 1;
+    position: relative;
 }
 .img {
     width: 100%;
@@ -106,5 +114,15 @@ export default {
     width: 6vw;
     height: 6vw;
     margin: 2vw;
+}
+.btn {
+    padding: 0;
+    width: 4vw;
+    height: 4vw;
+}
+.copy  {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: 0;
 }
 </style>
