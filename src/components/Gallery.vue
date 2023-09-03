@@ -1,22 +1,35 @@
 <template>
     <div class="gallery">
+        <div v-if="carouselVisible">
+            <GalleryCarousel 
+            :p_idx="clicked_idx"
+            @close="nonVisibleCarousel"
+            />
+        </div>
         <h3>Gallery</h3>
         <div class="row">
             <div class="col"
-            v-for="file_name in picture_names"
+            v-for="(file_name, idx) in picture_names"
             :key="file_name">
                 <img class="img"
-                :src="file_name">
+                :src="file_name"
+                @click="visibleCarousel(idx)">
             </div>
         </div>
+        
     </div>
 </template>
 
 <script>
+import GalleryCarousel from './GalleryCarousel.vue'
+
 export default {
     name: 'Gallery',
     props: {
-        
+    
+    },
+    components: {
+        GalleryCarousel,
     },
     data: function() {
         return {
@@ -37,14 +50,30 @@ export default {
                 require('@/assets/pictures/14.jpg'),
                 require('@/assets/pictures/15.jpg')
             ],
+            clicked_idx: 0,
+            carouselVisible: false,
         }
-    }
+    },
+    methods: {
+        visibleCarousel: function (idx) {
+            this.clicked_idx = idx;
+            // console.log(this.clicked_idx)
+            this.carouselVisible = true;
+            // console.log(this.carouselVisible)
+        },
+        nonVisibleCarousel: function () {
+            this.carouselVisible = false;
+            console.log("close carousel")
+        }
+    },
 }
 </script>
 
 <style scoped>
 .gallery {
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 .row {
     --bs-gutter-x: 1vw;
