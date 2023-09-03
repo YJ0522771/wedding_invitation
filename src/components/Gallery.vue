@@ -81,6 +81,8 @@ export default {
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: 0;
+    margin-left: 0;
     align-items: center;
     justify-content: center;
 }

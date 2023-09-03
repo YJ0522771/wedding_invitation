@@ -1,5 +1,7 @@
 <template>
     <div  id="carouselExample" class="carousel slide gallery-carousel">
+        <button type="button" class="btn-close" aria-label="Close"
+        @click="closeCarousel"></button>
         <div class="carousel-inner">
             <div
             v-for="(file_name, idx) in picture_names"
@@ -20,8 +22,6 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-        <button type="button" class="btn-close" aria-label="Close"
-        @click="closeCarousel"></button>
     </div>
 </template>
 
@@ -95,7 +95,7 @@ export default {
     height: 80vh;
     margin: auto;
     object-fit: contain;
-    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 .btn-close {
     width: 5vw;

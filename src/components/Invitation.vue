@@ -49,7 +49,7 @@ export default {
     font-size: 2.3vw;
 }
 .text {
-    font-size: 3vw;   
+    font-size: 4vw;   
 }
 .names {
     margin: 5vw
@@ -57,7 +57,7 @@ export default {
 .name-text {
     font-size: 4vw;  
     font-weight: bolder;
-    margin: 3vw
+    margin: 6vw
 }
 .other-text {
     font-size: 2vw; 

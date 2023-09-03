@@ -4,11 +4,19 @@
         <div class="address">
             <span class="address-title">주소:</span> <span class="address-text">경북 구미시 새마을로 225</span> <button @click="copyAddress"></button>
         </div>
-        <div class="transinfo">
-            <p class="transinfo-title">대중교통 이용 시</p>
-            <p></p>
-            <p class="transinfo-title">자가용 이용 시</p>
-            <p></p>
+        <div>
+            <a href="https://surl.tmobiapi.com/84c21001">
+                <img src="@/assets/icons/Tmap.png"
+                class="icon"/>
+            </a>
+            <a href="https://naver.me/G6DymFD8">
+                <img src="@/assets/icons/Naver.png"
+                class="icon"/>
+            </a>
+            <a href="https://kko.to/LIR5wXn5Wr">
+                <img src="@/assets/icons/Kakao.png"
+                class="icon"/>
+            </a>
         </div>
     </div>
 </template>
@@ -36,7 +44,7 @@ export default {
         script.onload = () => {
         // 네이버 지도 생성
             var map = new window.naver.maps.Map("mapdata", {
-                center: new window.naver.maps.LatLng(36.1031018, 128.3615057),
+                center: new window.naver.maps.LatLng(36.101928, 128.362800),
                 zoom: 16
             });
 
@@ -49,7 +57,7 @@ export default {
     methods: {
         copyAddress: function () {
             this.$copyText("경북 구미시 새마을로 225").then(()=> {
-                    alert("주소를 클립보드에 복사하였습니다.")
+                    
             })
         }
     }       
@@ -93,5 +101,10 @@ export default {
     color: #004f08;
     font-weight: bold;
     font-size: 2.5vw;
+}
+.icon {
+    width: 6vw;
+    height: 6vw;
+    margin: 2vw;
 }
 </style>
