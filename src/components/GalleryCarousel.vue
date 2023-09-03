@@ -1,20 +1,12 @@
 <template>
-    <div class="gallery">
-        <h3>Gallery</h3>
-        <div class="row">
-            <div class="col"
-            v-for="file_name in picture_names"
-            :key="file_name">
-                <img class="img"
-                :src="file_name">
-            </div>
-        </div>
+    <div class="gallery-carousel">
+        
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Gallery',
+    name: 'GalleryCarousel',
     props: {
         
     },
@@ -43,30 +35,8 @@ export default {
 </script>
 
 <style scoped>
-.gallery {
+.gallery-carousel {
     width: 100%;
-}
-.row {
-    --bs-gutter-x: 1vw;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    align-items: center;
-    justify-content: center;
-}
-.col {
-    flex: 0 0 0%;
-    margin: 1vw;
-    align-items: center;
-}
-.img {
-    width: 40vw;
-    height: 40vw;
-    object-fit: cover;
-    display: flex;
-    position: relative;
-    margin: auto;
 }
 
 </style>

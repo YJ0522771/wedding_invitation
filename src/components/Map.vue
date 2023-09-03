@@ -2,6 +2,7 @@
     <div class="map">
         <h3>Location</h3>
         <div id="mapdata"></div>
+        <p>경북 구미시 새마을로 225</p>
     </div>
 </template>
 
@@ -22,7 +23,7 @@ export default {
         script.onload = () => {
         // 네이버 지도 생성
             var map = new window.naver.maps.Map("mapdata", {
-                center: new window.naver.maps.LatLng(36.1031018, 128.3615047),
+                center: new window.naver.maps.LatLng(36.1031018, 128.3615057),
                 zoom: 16
             });
 
@@ -48,8 +49,8 @@ export default {
     object-fit: contain;
 }
 #mapdata {
-    width:60%; 
-    height:50vw;
+    width: 90%; 
+    height: 50vw;
     margin: auto;
 }
 </style>
