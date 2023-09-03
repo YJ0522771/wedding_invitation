@@ -49,15 +49,18 @@ export default {
     font-size: 2.3vw;
 }
 .text {
-    font-size: 2.7vw;   
+    font-size: 3vw;   
 }
 .names {
     margin: 5vw
 }
 .name-text {
-    font-size: 3.5vw;  
+    font-size: 4vw;  
     font-weight: bolder;
     margin: 3vw
+}
+.other-text {
+    font-size: 2vw; 
 }
 .img {
     width: 100%;

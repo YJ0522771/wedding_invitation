@@ -1,12 +1,25 @@
 <template>
     <div class="map">
-        <h3>Location</h3>
         <div id="mapdata"></div>
-        <p>경북 구미시 새마을로 225</p>
+        <div class="address">
+            <span class="address-title">주소:</span> <span class="address-text">경북 구미시 새마을로 225</span> <button @click="copyAddress"></button>
+        </div>
+        <div class="transinfo">
+            <p class="transinfo-title">대중교통 이용 시</p>
+            <p></p>
+            <p class="transinfo-title">자가용 이용 시</p>
+            <p></p>
+        </div>
     </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import VueClipboard from 'vue-clipboard2'
+
+VueClipboard.config.autoSetContainer = true;
+Vue.use(VueClipboard)
+
 export default {
     name: 'Map',
     props: {
@@ -32,8 +45,14 @@ export default {
                 map: map
             });
         };
-    }
-            
+    },
+    methods: {
+        copyAddress: function () {
+            this.$copyText("경북 구미시 새마을로 225").then(()=> {
+                    alert("주소를 클립보드에 복사하였습니다.")
+            })
+        }
+    }       
 }
 </script>
 
@@ -42,6 +61,8 @@ export default {
     width: 100%;
     margin: 0;
     align-items: center;
+    margin-top: 20vw;
+    margin-bottom: 20vw;
 }
 .img {
     width: 100%;
@@ -52,5 +73,25 @@ export default {
     width: 90%; 
     height: 50vw;
     margin: auto;
+}
+.address {
+    font-size: 2.5vw;
+    margin-top: 10vw;
+}
+.address-title {
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+.address-text {
+    font-size: 2.5vw;
+}
+.transinfo {
+    margin: 10vw 10vw 20vw 20vw;
+    text-align: start;
+}
+.transinfo-title {
+    color: #004f08;
+    font-weight: bold;
+    font-size: 2.5vw;
 }
 </style>
