@@ -113,9 +113,9 @@ export default {
     font-size: 2.5vw;
 }
 .icon {
-    width: 7vw;
-    height: 7vw;
-    margin: 3vw;
+    width: 8vw;
+    height: 8vw;
+    margin: 4vw;
 }
 .btn {
     padding: 0;
