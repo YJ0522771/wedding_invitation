@@ -58,10 +58,12 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #000000;
+    color: #050505;
     margin: 0;
     width: 100%;
-    background: #ffffff;
+    background: #fafafa;
+    z-index: 1;
+    position: relative;
 }
 .bg {
     width: 80%;

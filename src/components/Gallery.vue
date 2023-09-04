@@ -62,10 +62,14 @@ export default {
             this.clicked_idx = idx;
             // console.log(this.clicked_idx)
             this.carouselVisible = true;
+            let ele = document.querySelector('body');
+            ele.style.overflow = 'hidden';
             // console.log(this.carouselVisible)
         },
         nonVisibleCarousel: function () {
             this.carouselVisible = false;
+            let ele = document.querySelector('body');
+            ele.style.overflow = 'scroll';
             console.log("close carousel")
         }
     },
@@ -77,7 +81,7 @@ export default {
     width: 100%;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 2;
     position: relative;
 }
 .row {
@@ -97,8 +101,8 @@ export default {
     align-items: center;
 }
 .img {
-    width: 40vw;
-    height: 40vw;
+    width: 28vw;
+    height: 28vw;
     object-fit: cover;
     display: flex;
     position: relative;

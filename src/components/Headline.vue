@@ -33,8 +33,8 @@ export default {
     display: inline-flex;
 }
 .text {
-    width: 20vw;
-    font-size: 3vw;
+    width: 30vw;
+    font-size: 1.2rem;
     font-weight: bold;
     margin: 2vw auto;
     display: inline-flex;

@@ -42,31 +42,23 @@ export default {
     position: relative;
 }
 .greeting {
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-top: 30vw;
     margin-bottom: 30vw;
 }
-.title-text {
-    font-size: 2.3vw;
-}
 .text {
-    font-size: 3vw;   
+    font-size: 1rem;   
 }
 .names {
     margin: 3vw
 }
 .name-text {
-    font-size: 4.5vw;  
+    font-size: 1.5rem;  
     font-weight: bolder;
     margin: 3vw
 }
 .other-text {
-    font-size: 2vw; 
-}
-.img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    font-size: 0.8rem; 
 }
 </style>

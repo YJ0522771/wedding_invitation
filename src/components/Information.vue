@@ -35,5 +35,8 @@ export default {
     margin-top: 20vw;
     margin-bottom: 20vw;
 }
+.address-text {
+    font-size: 1rem;
+}
 
 </style>

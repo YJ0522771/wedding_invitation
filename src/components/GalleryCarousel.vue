@@ -12,12 +12,12 @@
                 class="img">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev"
+        <button class="carousel-control-prev"
         @click="minusPictureNum">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next"
+        <button class="carousel-control-next"
         @click="plusPictureNum">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
@@ -81,7 +81,7 @@ export default {
 .gallery-carousel {
     position: fixed;
     margin: 0;
-    --bs-modal-zindex: 10;
+    --bs-modal-zindex: 100;
     z-index: var(--bs-modal-zindex);
     top: 0;
     left: 0;
@@ -96,10 +96,20 @@ export default {
     margin: auto;
     object-fit: contain;
     margin-bottom: 10vh;
+    z-index: 10;
 }
 .btn-close {
     width: 5vw;
     height: 5vw;
-    margin-top: 2vh;
+    margin-top: 5%;
+    margin-left: 80%;
+}
+.carousel-control-prev {
+    height: 80%;
+    margin: auto
+}
+.carousel-control-next {
+    height: 80%;
+    margin: auto
 }
 </style>

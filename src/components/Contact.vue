@@ -70,18 +70,18 @@ export default {
             account2: [
                 {
                     name: '조유진',
-                    bank: '국민은행',
-                    account: '1234567890'
-                },
-                {
-                    name: '조유진',
                     bank: '기업은행',
-                    account: '1234567890'
+                    account: '27806916001019'
                 },
                 {
-                    name: '조유진',
-                    bank: '하나은행',
-                    account: '1234567890'
+                    name: '조재천',
+                    bank: '농협',
+                    account: '356-1544-5005-63'
+                },
+                {
+                    name: '이길남',
+                    bank: '산업은행',
+                    account: '020-4702-2155-850'
                 }
             ],
             visible1: false,
@@ -152,15 +152,15 @@ export default {
 .btn {
     margin: 1vw 0;
     padding: 0;
-    width: 4vw;
-    height: 4vw;
+    width: 6vw;
+    height: 6vw;
 }
 .btn-text {
     font-weight: bold;
 }
 .copy  {
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 3vw;
+    height: 3vw;
     margin: 0;
 }
 </style>

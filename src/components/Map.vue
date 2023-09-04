@@ -50,7 +50,7 @@ export default {
         script.onload = () => {
         // 네이버 지도 생성
             var map = new window.naver.maps.Map("mapdata", {
-                center: new window.naver.maps.LatLng(36.101928, 128.362800),
+                center: new window.naver.maps.LatLng(36.102497, 128.362889),
                 zoom: 16
             });
 
@@ -93,13 +93,15 @@ export default {
 .address {
     font-size: 2.5vw;
     margin-top: 10vw;
+    align-content: center;
+    text-align: center;
 }
 .address-title {
-    font-size: 2.5vw;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 .address-text {
-    font-size: 2.5vw;
+    font-size: 1.1rem;
 }
 .transinfo {
     margin: 10vw 10vw 20vw 20vw;
@@ -111,18 +113,18 @@ export default {
     font-size: 2.5vw;
 }
 .icon {
-    width: 6vw;
-    height: 6vw;
-    margin: 2vw;
+    width: 7vw;
+    height: 7vw;
+    margin: 3vw;
 }
 .btn {
     padding: 0;
-    width: 4vw;
-    height: 4vw;
+    width: 7vw;
+    height: 7vw;
 }
 .copy  {
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 4vw;
+    height: 4vw;
     margin: 0;
 }
 </style>
