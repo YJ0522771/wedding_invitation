@@ -6,7 +6,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button :class="{'accordion-button': true, 'collapsed': !visible1}" type="button" data-bs-toggle="collapse" @click="click1">
-                        신랑 측 계좌번호
+                        신랑 측에 마음 전하기
                     </button>
                 </h2>
                 <div :class="{'accordion-collapse': true, 'collapse': true, 'show': visible1}" >
@@ -14,14 +14,14 @@
                     v-for="e in account1"
                     :key="e.name">
                         <p class="name">{{ e.name }}</p>
-                        <div class="account"><span>{{ e.bank }}</span> <span>{{ e.account }}</span><button class="btn" @click="copy(e.name)"><img class="copy" src="@/assets/icons/copy.png"></button></div>
+                        <div class="account"><span>{{ e.bank }}</span> <span>{{ e.account }}</span><button class="btn" @click="copy(e.name)"><i class="fas fa-copy"></i></button></div>
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button :class="{'accordion-button': true, 'collapsed': !visible2}" type="button" @click="click2">
-                        신부 측 계좌번호
+                        신부 측에 마음 전하기
                     </button>
                 </h2>
                 <div :class="{'accordion-collapse': true, 'collapse': true, 'show': visible2}">
@@ -29,7 +29,7 @@
                     v-for="e in account2"
                     :key="e.name">
                         <p class="name">{{ e.name }}</p>
-                        <div class="account"><span>{{ e.bank }}</span> <span>{{ e.account }}</span><button class="btn" @click="copy(e.name)"><img class="copy" src="@/assets/icons/copy.png"></button></div>
+                        <div class="account"><span>{{ e.bank }}</span> <span>{{ e.account }}</span><button class="btn" @click="copy(e.name)"><i class="fas fa-copy"></i></button></div>
                         
                     </div>
                 </div>

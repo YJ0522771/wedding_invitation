@@ -4,7 +4,7 @@
         headline="예식장 안내"/>
         <div id="mapdata"></div>
         <div class="address">
-            <span class="address-title">주소:</span> <span class="address-text">경북 구미시 새마을로 225</span> <button class="btn" @click="copyAddress"><img class="copy" src="@/assets/icons/copy.png"></button>
+            <span class="address-title">주소:</span> <span class="address-text">경북 구미시 새마을로 225</span> <button class="btn" @click="copyAddress"><i class="fas fa-copy"></i></button>
         </div>
         <div>
             <a href="https://surl.tmobiapi.com/84c21001">
