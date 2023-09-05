@@ -1,6 +1,6 @@
 <template>
     <div class="title">
-        <img src = "@/assets/contents/title.jpg" class="img"/>
+        <img src = "@/assets/contents/title.png" class="img"/>
     </div>
 </template>
 
@@ -16,9 +16,12 @@ export default {
 <style scoped>
 .title {
     width: 100%;
+    height: 100%;
     margin: 0;
+    margin-bottom: 20vw;
     z-index: 1;
     position: relative;
+    background: #AFD4D1;
 }
 .img {
     width: 100%;

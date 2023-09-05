@@ -26,7 +26,7 @@ export default {
 }
 .img {
     width: 100%;
-    margin-top: 20vw;
+    margin-top: 10vw;
 }
 .address {
     margin: auto;

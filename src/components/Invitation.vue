@@ -52,7 +52,7 @@ export default {
     width: 80%;
     margin: auto;
     margin-top: 30vw;
-    margin-bottom: 30vw;
+    margin-bottom: 20vw;
 }
 .text {
     font-size: 1rem;   
