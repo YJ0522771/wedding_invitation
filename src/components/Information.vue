@@ -1,6 +1,6 @@
 <template>
     <div class="information">
-        <img src = "@/assets/contents/information.jpg" class="img"/>
+        <img src = "@/assets/contents/information.png" class="img"/>
         <div class="address">
             <p class="address-text">2023년 11월 12일 일요일 오전 11시</p>
             <p class="address-text">라뷰웨딩컨벤션 4층 라빌리에 홀</p>
@@ -25,9 +25,7 @@ export default {
     z-index: 1;
 }
 .img {
-    width: 80%;
-    height: 100%;
-    object-fit: contain;
+    width: 100%;
     margin-top: 20vw;
 }
 .address {

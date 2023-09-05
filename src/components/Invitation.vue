@@ -1,5 +1,7 @@
 <template>
     <div class="invitation">
+        <Headline
+        headline="초대합니다" />
         <div class="greeting">
             <!-- <p class="title-text">모시는 글</p>
             <br> -->
@@ -26,11 +28,16 @@
 </template>
 
 <script>
+import Headline from './Headline.vue'
+
 export default {
     name: 'Invitation',
     props: {
         
-    }
+    },
+    components: {
+        Headline
+    },
 }
 </script>
 
@@ -54,7 +61,7 @@ export default {
     margin: 3vw
 }
 .name-text {
-    font-size: 1.5rem;  
+    font-size: 1.3rem;  
     font-weight: bolder;
     margin: 3vw
 }

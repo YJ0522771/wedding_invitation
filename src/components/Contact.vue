@@ -6,7 +6,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button :class="{'accordion-button': true, 'collapsed': !visible1}" type="button" data-bs-toggle="collapse" @click="click1">
-                        신랑 측에 마음 전하기
+                        <img src="@/assets/icons/L.png" class="img">신랑 측에 마음 전하기
                     </button>
                 </h2>
                 <div :class="{'accordion-collapse': true, 'collapse': true, 'show': visible1}" >
@@ -21,7 +21,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button :class="{'accordion-button': true, 'collapsed': !visible2}" type="button" @click="click2">
-                        신부 측에 마음 전하기
+                        <img src="@/assets/icons/J2.png" class="img">신부 측에 마음 전하기
                     </button>
                 </h2>
                 <div :class="{'accordion-collapse': true, 'collapse': true, 'show': visible2}">
@@ -53,25 +53,25 @@ export default {
             account1: [
                 {
                     name: '이준우',
-                    bank: '국민은행',
-                    account: '1234567890'
-                },
-                {
-                    name: '이준우',
                     bank: '기업은행',
-                    account: '1234567890'
+                    account: '278-063342-01-013'
                 },
                 {
-                    name: '이준우',
-                    bank: '하나은행',
-                    account: '1234567890'
+                    name: '이기영',
+                    bank: '농협',
+                    account: '741011-56-203312'
+                },
+                {
+                    name: '이화연',
+                    bank: '농협',
+                    account: '741011-52-188776'
                 }
             ],
             account2: [
                 {
                     name: '조유진',
                     bank: '기업은행',
-                    account: '27806916001019'
+                    account: '278-069160-01-019'
                 },
                 {
                     name: '조재천',
@@ -162,5 +162,11 @@ export default {
     width: 3vw;
     height: 3vw;
     margin: 0;
+}
+.img {
+    width: 7vw;
+    height: 7vw;
+    margin: auto 3vw;
+    display: inline-flex;
 }
 </style>
