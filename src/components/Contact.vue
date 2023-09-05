@@ -6,7 +6,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button :class="{'accordion-button': true, 'collapsed': !visible1}" type="button" data-bs-toggle="collapse" @click="click1">
-                        <img src="@/assets/icons/L.png" class="img">신랑 측에 마음 전하기
+                        <img src="@/assets/icons/L.png" class="img"><div class="according-title">신랑 측에 마음 전하기</div>
                     </button>
                 </h2>
                 <div :class="{'accordion-collapse': true, 'collapse': true, 'show': visible1}" >
@@ -21,7 +21,7 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button :class="{'accordion-button': true, 'collapsed': !visible2}" type="button" @click="click2">
-                        <img src="@/assets/icons/J2.png" class="img">신부 측에 마음 전하기
+                        <img src="@/assets/icons/J2.png" class="img"><div class="according-title">신부 측에 마음 전하기</div>
                     </button>
                 </h2>
                 <div :class="{'accordion-collapse': true, 'collapse': true, 'show': visible2}">
@@ -135,8 +135,10 @@ export default {
 
 <style scoped>
 .accordion {
-    width: 80vw;
-    margin: 10vw auto;
+    width: 90%;
+    margin: auto;
+    margin-top: 10vw;
+    padding-bottom: 10vw;
     z-index: 1;
     position: relative;
 }
@@ -168,5 +170,8 @@ export default {
     height: 7vw;
     margin: auto 3vw;
     display: inline-flex;
+}
+.according-title {
+    font-size: 1rem;
 }
 </style>

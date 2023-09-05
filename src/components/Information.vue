@@ -34,7 +34,7 @@ export default {
     margin-bottom: 20vw;
 }
 .address-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 </style>
