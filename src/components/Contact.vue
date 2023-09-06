@@ -1,7 +1,7 @@
 <template>
     <div class="contact">
         <Headline
-        headline="매미 전하는 곳"/>
+        headline="마음을 전하는 곳"/>
         <div class="accordion">
             <div class="accordion-item">
                 <h2 class="accordion-header">

@@ -21,7 +21,7 @@ export default {
     margin-bottom: 20vw;
     z-index: 1;
     position: relative;
-    background: #b4D9D6;
+    background: #b9DeDb;
 }
 .img {
     width: 100%;
