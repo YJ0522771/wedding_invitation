@@ -52,6 +52,9 @@ export default {
         // 네이버 지도 생성
             var map = new window.naver.maps.Map("mapdata", {
                 center: new window.naver.maps.LatLng(36.102497, 128.362889),
+                draggable: false,
+                disableDoubleTapZoom: true,
+                disableTwoFingerTapZoom: true,
                 zoom: 16
             });
 
@@ -59,10 +62,6 @@ export default {
                 position: new window.naver.maps.LatLng(36.1031018, 128.3615047),
                 map: map
             });
-            
-            map.draggable = false;
-            map.disableDoubleTapZoom = true;
-            map.disableTwoFingerTapZoom = true;
         };
     },
     methods: {
