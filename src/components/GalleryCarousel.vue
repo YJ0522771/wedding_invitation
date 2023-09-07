@@ -1,15 +1,18 @@
 <template>
     <div  id="carouselExample" class="carousel slide gallery-carousel">
-        <button type="button" class="btn-close" aria-label="Close"
-        @click="closeCarousel"></button>
+        <!-- <button type="button" class="btn-close" aria-label="Close"
+        @click="closeCarousel"></button> -->
         <div class="carousel-inner">
             <div
             v-for="(file_name, idx) in picture_names"
             :key="idx" 
             :class="{'carousel-item': true, 'active': idx == picture_idx}">
+                <div class="space" @click="closeCarousel"></div>
                 <img 
                 :src="file_name" 
                 class="img">
+                <p class="number">{{ idx + 1 }} / {{ picture_names.length }}</p>
+                <div class="space" @click="closeCarousel"></div>
             </div>
         </div>
         <button class="carousel-control-prev"
@@ -90,13 +93,23 @@ export default {
     width: 100%;
     height: 100%;
 }
+.carousel-item {
+    height: 100%;
+}
 .img {
     width: 80vw;
-    height: 80vh;
+    height: calc(min(80vh, 120vw));
     margin: auto;
     object-fit: contain;
-    margin-bottom: 10vh;
     z-index: 10;
+}
+.space {
+    height: calc((100vh - min(80vh, 120vw))/2);
+    margin: auto;
+}
+.number {
+    color: rgb(44, 44, 44);
+    margin: 1vw
 }
 .btn-close {
     width: 5vw;
@@ -105,11 +118,11 @@ export default {
     margin-left: 80%;
 }
 .carousel-control-prev {
-    height: 80%;
+    height: 40%;
     margin: auto
 }
 .carousel-control-next {
-    height: 80%;
+    height: 40%;
     margin: auto
 }
 </style>

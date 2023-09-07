@@ -117,14 +117,18 @@ export default {
             for (var i = 0; i < this.account1.length; i++)
             {
                 if (this.account1[i].name === name) {
-                    this.$copyText(this.account1[i].bank + " " + this.account1[i].account).then(()=> {})
+                    this.$copyText(this.account1[i].bank + " " + this.account1[i].account).then(()=> {
+                        alert("복사 완료.");
+                    })
                     return;
                 }
             }
             for (i = 0; i < this.account2.length; i++)
             {
                 if (this.account2[i].name === name) {
-                    this.$copyText(this.account2[i].bank + " " + this.account2[i].account).then(()=> {})
+                    this.$copyText(this.account2[i].bank + " " + this.account2[i].account).then(()=> {
+                        alert("복사 완료.");
+                    })
                     return;
                 }
             }
@@ -136,7 +140,7 @@ export default {
 <style scoped>
 .accordion {
     width: 90%;
-    margin: auto;
+    margin: 5vw;
     margin-top: 10vw;
     padding-bottom: 10vw;
     z-index: 1;
@@ -144,6 +148,7 @@ export default {
 }
 .accounts {
     text-align: start;
+    font-family: 'Noto Serif KR', serif;
 }
 .name {
     font-weight: bold;
@@ -172,6 +177,7 @@ export default {
     display: inline-flex;
 }
 .according-title {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-family: 'Nanum Brush Script', cursive;
 }
 </style>

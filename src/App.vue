@@ -8,6 +8,7 @@
         <Gallery/>
         <Map/>
         <Contact/>
+        <!-- <Footer/> -->
         <img src="@/assets/contents/bg.png" class="bg"/>
     </div>
 </template>
@@ -19,6 +20,7 @@ import Information from './components/Information.vue'
 import Gallery from './components/Gallery.vue'
 import Map from './components/Map.vue'
 import Contact from './components/Contact.vue'
+// import Footer from './components/Footer.vue'
 
 export default {
     name: 'App',
@@ -28,7 +30,8 @@ export default {
         Information,
         Gallery,
         Map,
-        Contact
+        Contact,
+        // Footer
     },
     data: function() {
         return {
@@ -72,6 +75,6 @@ export default {
     left: 0;
     margin: 0 10%;
     z-index: 0;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 </style>

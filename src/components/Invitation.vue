@@ -55,13 +55,15 @@ export default {
     margin-bottom: 20vw;
 }
 .text {
-    font-size: 1rem;   
+    font-size: 1.1rem;   
+    font-family: 'Diphylleia', serif;
 }
 .names {
-    margin: 3vw
+    margin: 3vw;
+    font-family: 'Orbit', sans-serif;
 }
 .name-text {
-    font-size: 1.3rem;  
+    font-size: 1.4rem;  
     font-weight: bolder;
     margin: 3vw
 }

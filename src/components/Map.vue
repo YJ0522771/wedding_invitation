@@ -4,7 +4,8 @@
         headline="예식장 안내"/>
         <div id="mapdata"></div>
         <div class="address">
-            <span class="address-title">주소:</span> <span class="address-text">경북 구미시 새마을로 225</span> <button class="btn" @click="copyAddress"><i class="fas fa-copy"></i></button>
+            <span class="address-title">주소 : </span> 
+            <span class="address-text">경북 구미시 새마을로 225</span> <button class="btn" @click="copyAddress"><i class="fas fa-copy"></i></button>
         </div>
         <div>
             <a href="https://surl.tmobiapi.com/84c21001">
@@ -63,7 +64,7 @@ export default {
     methods: {
         copyAddress: function () {
             this.$copyText("경북 구미시 새마을로 225").then(()=> {
-                    
+                alert("복사 완료.");
             })
         }
     }       
@@ -95,13 +96,15 @@ export default {
     margin-top: 10vw;
     align-content: center;
     text-align: center;
+    font-family: 'Poor Story', cursive;
 }
 .address-title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 .address-text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    
 }
 .transinfo {
     margin: 10vw 10vw 20vw 20vw;
