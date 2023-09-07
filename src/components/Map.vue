@@ -55,6 +55,7 @@ export default {
                 draggable: false,
                 disableDoubleTapZoom: true,
                 disableTwoFingerTapZoom: true,
+                zoomControl: true,
                 zoom: 16
             });
 
@@ -91,7 +92,7 @@ export default {
 }
 #mapdata {
     width: 90%; 
-    height: 50vw;
+    height: 70vw;
     margin: auto;
 }
 .address {
