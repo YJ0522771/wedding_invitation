@@ -59,6 +59,10 @@ export default {
                 position: new window.naver.maps.LatLng(36.1031018, 128.3615047),
                 map: map
             });
+            
+            map.draggable = false;
+            map.disableDoubleTapZoom = true;
+            map.disableTwoFingerTapZoom = true;
         };
     },
     methods: {
@@ -99,11 +103,11 @@ export default {
     font-family: 'Poor Story', cursive;
 }
 .address-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 .address-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
     
 }
 .transinfo {
