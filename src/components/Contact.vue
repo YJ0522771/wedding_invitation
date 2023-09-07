@@ -177,7 +177,7 @@ export default {
     display: inline-flex;
 }
 .according-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: 'Nanum Brush Script', cursive;
 }
 </style>
