@@ -39,11 +39,17 @@ export default {
             windowHeight: window.innerHeight
         }
     },
+    created() {
+        
+        window.history.pushState({id: 1, data: 'main'}, '이준우&조유진 결혼합니다', "https://m.site.naver.com/1cTAb");
+    },
     mounted() {
+       // console.log(window.location.href);
+
         window.addEventListener('resize', () => {
             this.windowWidth = window.innerWidth
             this.windowHeight = window.innerHeight
-            console.log(this.isMobile)
+            //console.log(this.isMobile)
         })
     },
     computed: {
