@@ -1,5 +1,6 @@
 <template>
     <div class="footer">
+        <div class="text">Made by Jo and Lee</div>
     </div>
 </template>
 
@@ -15,7 +16,7 @@ export default {
 <style scoped>
 .footer {
     width: 100%;
-    height: 2vh;
+    height: 3vh;
     z-index: 1;
     position: relative;
     background: #f0f0f0;
@@ -24,7 +25,9 @@ export default {
     
 }
 .text {
-    margin: auto;
-    
+    margin: 1vh;
+    font-family: 'Nanum Brush Script', cursive;
+    font-style: italic;
+    font-size: 2vh;
 }
 </style>
