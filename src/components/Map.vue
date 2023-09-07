@@ -103,7 +103,7 @@ export default {
     font-weight: bold;
 }
 .address-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     
 }
 .transinfo {

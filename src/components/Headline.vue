@@ -34,7 +34,7 @@ export default {
 }
 .text {
     width: 35vw;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
     margin: 2vw auto;
     display: inline-flex;

@@ -55,7 +55,7 @@ export default {
     margin-bottom: 20vw;
 }
 .text {
-    font-size: 1.1rem;   
+    font-size: 1rem;   
     font-family: 'Diphylleia', serif;
 }
 .names {
@@ -63,7 +63,7 @@ export default {
     font-family: 'Orbit', sans-serif;
 }
 .name-text {
-    font-size: 1.4rem;  
+    font-size: 1.2rem;  
     font-weight: bolder;
     margin: 3vw
 }
