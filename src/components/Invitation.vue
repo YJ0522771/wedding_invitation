@@ -15,12 +15,12 @@
         <div class="greeting">
             <div class="names">
                 <span class="name-text">이기영 · 이화연</span>
-                <span>의 장남</span>
+                <span class="other-text">의 장남</span>
                 <span class="name-text">준우</span>
             </div>
             <div class="names">
                 <span class="name-text">조재천 · 이길남</span>
-                <span>의 장녀</span>
+                <span class="other-text">의 장녀</span>
                 <span class="name-text">유진</span>
             </div>
         </div>    
@@ -63,7 +63,7 @@ export default {
     font-family: 'Orbit', sans-serif;
 }
 .name-text {
-    font-size: 1.2rem;  
+    font-size: 1.1rem;  
     font-weight: bolder;
     margin: 3vw
 }
