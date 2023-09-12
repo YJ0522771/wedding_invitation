@@ -83,6 +83,7 @@ export default {
     justify-content: center;
     z-index: 2;
     position: relative;
+    margin: 50vw 0;
 }
 .row {
     --bs-gutter-x: 1vw;

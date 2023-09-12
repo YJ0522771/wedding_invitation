@@ -138,6 +138,9 @@ export default {
 </script>
 
 <style scoped>
+.contact {
+    margin: 50vw 0;
+}
 .accordion {
     width: 90%;
     margin: 5vw;

@@ -44,7 +44,7 @@ export default {
 <style scoped>
 .invitation {
     width: 100%;
-    margin: 0;
+    margin: 50vw 20vw 0 0;
     z-index: 1;
     position: relative;
 }

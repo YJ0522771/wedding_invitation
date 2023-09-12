@@ -78,10 +78,8 @@ export default {
 <style scoped>
 .map {
     width: 100%;
-    margin: 0;
+    margin: 50vw 0;
     align-items: center;
-    margin-top: 20vw;
-    margin-bottom: 20vw;
     z-index: 1;
     position: relative;
 }
@@ -96,7 +94,6 @@ export default {
     margin: auto;
 }
 .address {
-    font-size: 2.5vw;
     margin-top: 10vw;
     align-content: center;
     text-align: center;

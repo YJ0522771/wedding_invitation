@@ -20,7 +20,7 @@ export default {
 <style scoped>
 .information {
     width: 100%;
-    margin: 0;
+    margin: 20vw 50vw 0 0;
     position: relative;
     z-index: 1;
 }
@@ -37,6 +37,7 @@ export default {
     font-size: 1.1rem;
     font-family: 'Poor Story', cursive;
     font-weight: bold;
+    color: #003519;
 }
 
 </style>
