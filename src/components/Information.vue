@@ -3,7 +3,7 @@
         <img src = "@/assets/contents/information.png" class="img"/>
         <div class="address">
             <p class="address-text">2023년 11월 12일 일요일 오전 11시</p>
-            <p class="address-text">라뷰웨딩컨벤션 4층 라빌리에 홀</p>
+            <p class="address-text">라뷰웨딩컨벤션 4층 라벨리에 홀</p>
         </div>
     </div>
 </template>
